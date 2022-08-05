@@ -8,11 +8,17 @@
             scope.availableRoles = [];
             scope.formData = {
                 sendPasswordToEmail: true,
+                locale: 'en',
                 roles: []
             };
             resourceFactory.userTemplateResource.get(function (data) {
                 scope.offices = data.allowedOffices;
                 scope.availableRoles = data.availableRoles;
+               
+            }); 
+            resourceFactory.clientTemplateResource.get(function (data) {
+                 scope.genderOptions = data.genderOptions; 
+                 console.log(data);
             });
 
             scope.addRole = function () {

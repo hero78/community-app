@@ -25,6 +25,7 @@
                     firstname: data.firstname,
                     lastname: data.lastname,
                     middlename: data.middlename,
+                    surname: data.surname,
                     active: data.active,
                     accountNo: data.accountNo,
                     staffId: data.staffId,
